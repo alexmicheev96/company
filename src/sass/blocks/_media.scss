@@ -3,6 +3,9 @@
         width: 960px;
     }
     .header {
+        &__inner {
+            padding-bottom: 230px
+        }
         .nav-menu {
             justify-content: space-between;
             &__list {
@@ -11,6 +14,9 @@
                 left: 50%;
                 transform: translateX(-50%);
             }
+        }
+        .dashboard {
+            margin-top: -235px;
         }
     }
     .brands {
@@ -33,6 +39,9 @@
         font-size: 17px;
         line-height: 26px;
     }
+    // .dashboard {
+    //     margin-top: -330px;
+    // }
     .main-section {
         &__title {
             margin-top: 80px;
@@ -77,20 +86,13 @@
     }
     .footer {
         .nav-menu {
-            position: relative;
+            flex-direction: column;
+            gap: 15px;
             &__link {
-                align-content: flex-start;
-            }
-            &__list {
-                width: 100%;
-                position: absolute;
-                bottom: -30px;
-                left: 50%;
-                transform: translateX(-50%);
+                width: 160px;
             }
         }
     }
-}
 
 @media (max-width: 768px) {
    .container {
@@ -101,6 +103,9 @@
            padding-bottom: 140px;
            background-size: cover;
        }
+        .dashboard {
+            margin-top: -135px;
+        } 
        .nav-menu {
            justify-content: center;
            &__link {
@@ -162,9 +167,6 @@
        } 
        
    }
-   .dashboard {
-       margin-top: -140px;
-   }
    .title {
        font-size: 36px;
    }
@@ -219,14 +221,13 @@
    .footer {
        padding: 20px 0;
        .nav-menu {
-           flex-direction: column;
+           &__list {
+                width: 100%;
+           }
            &__item {
                &__link{
                   font-size: 13px; 
                } 
-           }
-           &__list {
-               bottom: 30px;
            }
        }
        &__divider {
@@ -341,9 +342,6 @@
             &__link {
                 width: 200px;
             }
-            &__list {
-                bottom: 35px;
-            }
             &__item {
                 &__link {
                     font-size: 7px;
@@ -352,5 +350,5 @@
         }
     }
 }
-
+}
 

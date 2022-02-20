@@ -1,0 +1,18 @@
+.features {
+    background: url('../img/feauters/feauters_bg.png')center center/100% 100% no-repeat;
+    padding-bottom: 184px;
+    min-height: fit-content;
+    &__subtitle {
+        margin-top: 24px;
+    }
+    &__inner {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 25px 30px;
+        margin-top: 30px;
+    }
+    &__card {
+        padding: 50px 25px 50px 41px;
+        
+    }
+}

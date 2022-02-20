@@ -1,0 +1,29 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import 'base/mixin';
+@import 'base/variables';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/tittle';
+@import 'blocks/card';
+@import 'blocks/features';
+@import 'blocks/our-process';
+@import 'blocks/brands';
+@import 'blocks/start';
+@import 'blocks/footer';
+
+:root {
+    position: relative;
+}
+* {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+@import 'blocks/media';

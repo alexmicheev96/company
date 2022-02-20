@@ -1,0 +1,70 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background: $main-color;
+    box-shadow: 0px 20px 50px rgba(59, 62, 67, 0.05);
+    border-radius: 15px;
+    &__inner {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        border-radius: 15px;
+        &_1 {
+            background: #FFE7DB;
+            box-shadow: 0px 10px 20px rgba(197, 158, 145, 0.1);
+        }
+        &_2 {
+            background: #E7F2EF;
+            box-shadow: 0px 10px 20px rgba(6, 77, 58, 0.03);
+        }
+        &_3 {
+            background: #FAF3D8;
+            box-shadow: 0px 10px 20px rgba(190, 166, 115, 0.05);
+        }
+        &_4 {
+            background: #C0F2EF;
+            box-shadow: 0px 10px 20px rgba(197, 158, 145, 0.1);
+        }
+        &_5 {
+            background: #EDE7F2;
+            box-shadow: 0px 10px 20px rgba(6, 77, 58, 0.03);
+        }
+        &_6 {
+            background: #D8F0FA;
+            box-shadow: 0px 10px 20px rgba(190, 166, 115, 0.05);
+        }
+        &_7 {
+            background: #DAE6FF;
+            box-shadow: 0px 10px 20px rgba(197, 158, 145, 0.1);
+        }
+        &_8 {
+            background: #E9E6FF;
+            box-shadow: 0px 10px 20px rgba(197, 158, 145, 0.1);
+        }
+        &_9 {
+            background: #CEEDFF;
+            box-shadow: 0px 10px 20px rgba(197, 158, 145, 0.1);
+        }
+    }
+    &__descr {
+        margin-top: 14px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        color: #3B3E43;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #595E64;
+        &_bold {
+            
+            font-weight: 700;
+        }
+    }
+}

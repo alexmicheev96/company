@@ -1,0 +1,21 @@
+.start {
+    background: url('../img/start/star_bg.png') center center/cover no-repeat; 
+    padding: 150px 0 143px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        &_left {
+            width: 30%;
+            align-self: center;
+        }
+        &_right {
+            width: 53%;
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+    &__btn {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,32 @@
+.title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 68px;
+        &-mini {
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: $second-color;
+            opacity: 0.5;
+            &_white {
+                color: $main-color;
+            }
+        }
+}
+.subtitle {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 122%;
+    color: #3B3E43;
+    margin-top: 24px;
+    &_white {
+        color: $main-color;
+    }
+}
+.descr {
+        font-size: 20px;
+        line-height: 34px;
+        margin-top: 24px;
+        color: $main-color;
+}

@@ -1,0 +1,63 @@
+.our-process {
+    padding: 194px 0 184px;
+    background: url('../img/itWorks/IT_work_bg.png') center center/cover no-repeat;
+    min-height: fit-content;
+    &__title {
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 20px;
+        text-align: center;
+    }
+    &__descr {
+        margin: 0 auto;
+        margin-top: 25px;
+        width: 61%;
+        text-align: center;
+    }
+    &__inner {
+        margin-top: 32px;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 40px;
+        
+    }
+    &__card {
+        position: relative;
+        padding: 12px 60px 21px 30px;
+        display: grid;
+        grid-template-columns:45% 50%;
+        column-gap: 40px;
+        background-color: $main-color;
+        border-radius: 15px;
+        &::after {
+            content: " ";
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 40px;
+            border: 1px dashed $main-color;
+        }
+        &:last-child {
+            &::after {
+                content: none;
+            }
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+    &__left-block {
+        display: flex;
+        align-items: center;
+    }
+    &__right-block {
+        justify-content: center;
+        background-color: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}

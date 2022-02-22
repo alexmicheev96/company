@@ -1,32 +1,6 @@
 .footer {
     background-color: #0D0D0D;
     padding: 84px 0 35px;
-    &__nav-menu {
-        padding: 0;
-        justify-content: space-between;
-        align-items: center;
-        &__link {
-            color: rgba(255, 255, 255, 0.8);
-        }
-    }
-    &__social {
-        justify-self: end;
-        width: 100px;
-        display: flex;
-        justify-content: space-between;
-        &_link {
-            width: 20px;
-            height: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center
-        }
-        &_icon {
-            width: 100%;
-            height: 100%;
-            background: #1C2226;
-        }
-    }
     &__divider {
         width: 100%;
         margin: 39px 0 30px;
@@ -37,11 +11,79 @@
         display: flex;
         justify-content: space-between;
         font-size: 15px;
-        line-height: 25px;
-        &_right {
-            &-1 {
-                margin-right: 24px;
+        line-height: 25px;  
+        &_left {
+            color: rgba(255, 255, 255, 0.2);
+        }
+        &_effect {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.2);
+            &:hover {
+                @include effect;
+                color: rgba(255, 255, 255, 0.8);
+                text-decoration: none;
             }
+        }
+        &_mr {
+            margin-right: 25px;
+        }
+    }
+}
+.menu-down {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 41px;
+    transition: 1s all;
+
+    &__img {
+        max-width: 176px;
+    }
+    &__logo {
+        width: 100%;
+    }   
+    &__list {
+        display: flex;
+        width: 60%;
+        margin-bottom: 0px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        list-style-type: none;
+    }
+    &__link {
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 500;
+        font-size: 16px;        
+        &:hover {
+            color: $main-color;
+            @include effect;
+            text-decoration: none;
+        }
+    }
+    &__social {
+        justify-self: end;
+        min-width: 100px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_link {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                @include effect;
+            }
+        }
+        &_icon {
+            width: 100%;
+            height: 100%;
+            background: #1C2226;
         }
     }
 }

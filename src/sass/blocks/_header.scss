@@ -26,9 +26,9 @@
         width: 260px;
         &:hover {
 
-            background-color: aqua;
-            transition: 1s all;
-            border-radius: 15px;
+            @include effect;
+            // transition: 1s all;
+            // border-radius: 15px;
         }
     }
     &__logo {
@@ -54,10 +54,9 @@
             text-decoration: none;
             padding: 5px;
             &:hover {
-                background-color: aqua;
-                border-radius: 15px;
-                transition: 1s all;
-                text-decoration: none;
+                @include effect;
+                color : #444444;
+                text-decoration: dotted;
             }
         }
     }
